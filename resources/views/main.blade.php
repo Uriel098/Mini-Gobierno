@@ -1,4 +1,7 @@
 @vite("styles.css")
+@vite("scripts.js")
+@extends('layouts.app')
+@section('content')
 <!DOCTYPE html>
 <html lang="en">
     <head>
