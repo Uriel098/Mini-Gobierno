@@ -13,6 +13,11 @@ return new class extends Migration
     {
         Schema::create('tramites', function (Blueprint $table) {
             $table->id();
+            $table->string("nombre");
+            $table->integer("tipo_id");
+            $table->double("precio");
+            $table->integer("usuario_id");
+            $table->string("status");
             $table->timestamps();
         });
     }

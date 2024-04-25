@@ -1,9 +1,12 @@
-@vite("styles.css")
-@vite("scripts.js")
-@extends('layouts.app')
-@section('content')
+
+
+
 <!DOCTYPE html>
+@vite("styles.css")
+@vite(['resources/css/styles.css', 'resources/js/app.js'])
+@extends('layouts.app')
 <html lang="en">
+    
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -34,8 +37,8 @@
                 </style>
                 
                 <div class="btn-container">
-                    <a class="btn btn-primary" href="#signup">Registrarse</a>
-                    <a class="btn btn-secundary" href="#signin">Iniciar Sesion</a>
+                    <a class="btn btn-primary" href="register">Registrarse</a>
+                    <a class="btn btn-secundary" href="login">Iniciar Sesion</a>
                 </div>
             </div>
         </nav>

@@ -13,6 +13,10 @@ return new class extends Migration
     {
         Schema::create('dependencias', function (Blueprint $table) {
             $table->id();
+            $table->string("name");
+            $table->string("direccion");
+            $table->string("correo");
+            $table->integer("telefono");
             $table->timestamps();
         });
     }
