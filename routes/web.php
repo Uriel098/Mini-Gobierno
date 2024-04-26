@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
-use App\Http\Controllers\AuthController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -19,8 +19,7 @@ Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('ho
 Auth::routes();
 Route::get('/login', [App\Http\Controllers\HomeController::class, 'index'])->name('login');
 Auth::routes();
-Route::post ('/login', [AuthController::class, 'login']);
-Auth::routes();
+
  
 
 
