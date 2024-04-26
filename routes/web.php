@@ -13,17 +13,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-
-
-Auth::routes();
-
 Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
 Auth::routes();
-
 Route::get('/login', [App\Http\Controllers\HomeController::class, 'index'])->name('login');
-
 Auth::routes();
-
 Route::post ('/login', [AuthController::class, 'login']);
+Auth::routes();
+ 
 
