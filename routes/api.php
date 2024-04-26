@@ -5,7 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\TramiteController;
 use App\Http\Controllers\TipoController;
 use App\Http\Controllers\DependenciaController;
-use App\Http\Controllers\UsuarioController;
+use App\Http\Controllers\UserController;
 use App\Http\Controllers\AuthController;
 
 /*
@@ -46,8 +46,8 @@ Route::post ('/Dependencias/update', [DependenciaController::class, 'update']);
 Route::delete ('/Dependencias/{id}', [DependenciaController::class, 'delete']);
 
 // api de Usuarios
-Route::get ('/Usuarios', [UsuarioController::class, 'list']);
-Route::get ('/Usuarios/{id}', [UsuarioController::class, 'item']);
-Route::post ('/Usuarios/create', [UsuarioController::class, 'create']);
-Route::post ('/Usuarios/update', [UsuarioController::class, 'update']);
-Route::delete ('/Usuarios/{id}', [UsuarioController::class, 'delete']);
+Route::get ('/Usuarios', [UserController::class, 'list']);
+Route::get ('/Usuarios/{id}', [UserController::class, 'item']);
+Route::post ('/Usuarios/create', [UserController::class, 'create']);
+Route::post ('/Usuarios/update', [UserController::class, 'update']);
+Route::delete ('/Usuarios/{id}', [UserController::class, 'delete']);
