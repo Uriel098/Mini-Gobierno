@@ -6,7 +6,8 @@ use App\Http\Controllers\DependenciaController;
 use App\Http\Controllers\TipoController;
 use App\Http\Controllers\TramiteController;
 use App\Http\Controllers\UserController;
-
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\NivelController;
 
 
 /*
