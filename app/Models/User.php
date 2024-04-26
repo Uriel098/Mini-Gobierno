@@ -19,8 +19,12 @@ class User extends Authenticatable
      */
     protected $fillable = [
         'name',
+        'telefono',
         'email',
         'password',
+        'ciudad',
+        'curp',
+        'nivel_id',
     ];
 
     /**
@@ -42,4 +46,7 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
         'password' => 'hashed',
     ];
+    public function Nivel(){
+        return $this->belongsTo(Nivel::class);
+    }
 }

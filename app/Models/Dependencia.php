@@ -8,4 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 class Dependencia extends Model
 {
     use HasFactory;
+    protected $fillable = ['name', 'direccion','correo','telefono'];
+
 }
