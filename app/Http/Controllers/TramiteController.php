@@ -8,7 +8,7 @@ class TramiteController extends Controller
 {
     public function index()
     {
-        $tramites = Store::all();
+        $tramites = Tramite::all();
         return view('tramites.tramites', compact('tramites')); 
     }
 
