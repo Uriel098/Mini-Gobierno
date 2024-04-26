@@ -3,8 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Tipo;
-//jksfjkf
+use App\Models\Tipo;
 
 class TipoController extends Controller
 {
